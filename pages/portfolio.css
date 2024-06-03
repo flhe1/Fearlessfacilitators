@@ -72,29 +72,32 @@
   object-fit: cover; /* Ensures the image covers the entire container */
 }
 
-h1 {
-  margin-left: 195px;
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: all 1s ease-out;
-}
+@media screen and (min-width: 800px) {
+  h1 {
+    margin-left: 15%;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s ease-out;
+  }
 
-h2 {
-  margin-left: 600px;
-  margin-top: -50px;
-  opacity: 0;
-  transform: translateX(100%);
-  transition: all 1s ease-out;
-}
+  h2 {
+    margin-left: 45%;
+    margin-top: 0;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 1s ease-out;
+  }
 
-.animated.slide-in-left {
-  transform: translateX(0);
-  opacity: 1;
-}
+  .animated.slide-in-left {
+    transform: translateX(0);
+    opacity: 1;
+  }
 
-.animated.slide-in-right {
-  transform: translateX(0);
-  opacity: 1;
+  .animated.slide-in-right {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 /* ----------------------GRID---------------------- */

@@ -1,0 +1,41 @@
+/* DESKTOP */
+@media screen and (min-width: 800px) {
+  h1 {
+    margin-left: 12%;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s ease-out;
+  }
+
+  h2 {
+    margin-left: 30%;
+    margin-top: 0;
+    margin-bottom: 400px;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 1s ease-out;
+  }
+
+  .animated.slide-in-left {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .animated.slide-in-right {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* MOBIL */
+@media screen and (max-width: 700px) {
+  h1,
+  h2 {
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 500px;
+  }
+}

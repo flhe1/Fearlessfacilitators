@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelector(".next").addEventListener("click", moveNext);
 });
 
-// portfolio scroll animation
+// H1 og H2 scroll animation
 document.addEventListener("DOMContentLoaded", function () {
   const animatedElements = document.querySelectorAll(".animated");
 
