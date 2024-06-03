@@ -1,0 +1,100 @@
+/* desktop */
+@media screen and (min-width: 800px) {
+  h1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .col_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
+    margin-bottom: 200px;
+  }
+
+  .col1 {
+    grid-column: 1;
+    padding-left: 150px;
+    padding-right: 25px;
+  }
+
+  .col2 {
+    grid-column: 2;
+    padding-right: 150px;
+    padding-left: 25px;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange children vertically */
+    align-items: center;
+  }
+
+  .rødsocials {
+    margin-top: 50px;
+    display: flex; /* Use flexbox */
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .card_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 200px;
+  }
+
+  .card1 {
+    grid-column: 2;
+    padding-right: 75px;
+  }
+
+  .card2 {
+    grid-column: 3;
+    padding-left: 75px;
+  }
+
+  .card1 img,
+  .card2 img {
+    width: 320px;
+  }
+}
+
+/* mobil */
+@media screen and (max-width: 800px) {
+  h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .col1 {
+    margin-top: 60px;
+  }
+
+  .col2 {
+    margin-top: 60px;
+  }
+
+  .rødsocials {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .rødsocials img {
+    width: 60px;
+    height: auto;
+  }
+
+  /* medarbejdercard */
+  .card_container {
+    display: flex; /* Flex layout for mobile */
+    flex-direction: column; /* Align cards vertically */
+    align-items: center; /* Center align cards horizontally */
+  }
+
+  .card1 img,
+  .card2 img {
+    width: 250px; /* Set width for mobile */
+    margin-bottom: 100px; /* Add spacing between cards */
+  }
+}

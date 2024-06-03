@@ -1,0 +1,28 @@
+h1,
+h2 {
+  text-align: center;
+}
+
+a {
+  color: #ffffff;
+}
+
+.tekstboks1 {
+  max-width: 700px;
+  margin: 0 auto; /* Center the container horizontally */
+  text-align: left; /* Ensure text within p elements is left-aligned */
+}
+
+.tekstboks1 p {
+  margin-bottom: 0px;
+}
+
+.tekstboks1 p:last-child {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 700px) {
+  h2 {
+    display: none;
+  }
+}

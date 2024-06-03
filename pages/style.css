@@ -1,0 +1,82 @@
+html {
+  background-color: #1c1c1c;
+}
+
+header {
+  margin: 0;
+}
+
+main {
+  margin-left: 58px;
+  margin-right: 58px;
+}
+
+/* font styling */
+.menu a {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 650;
+}
+
+h1,
+h2,
+.menu {
+  font-family: "Montserrat", sans-serif;
+  color: #e80124;
+}
+
+h1 {
+  font-size: 96px;
+  font-weight: 850;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+h3 {
+  color: white;
+  font-family: "Jaldi", sans-serif;
+  font-weight: lighter;
+  font-size: 30px;
+}
+
+p {
+  font-family: "Jaldi", sans-serif;
+  color: white;
+  font-size: 20px;
+  line-height: 2.5;
+}
+
+.footerheader {
+  font-weight: 600;
+}
+
+.webdesign p {
+  font-weight: 600;
+}
+
+.webdesign a {
+  font-weight: 300;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* mobil */
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 48px;
+    font-weight: 850;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}

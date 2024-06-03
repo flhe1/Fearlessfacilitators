@@ -1,0 +1,264 @@
+header {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #1c1c1c;
+  position: sticky;
+  z-index: 1;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 85px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.left_menu,
+.right_menu {
+  display: flex;
+  list-style: none;
+  gap: 85px;
+}
+
+.right_menu {
+  margin-left: -30px;
+}
+
+.logo img {
+  width: 87px;
+  height: 83px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #e80124;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+
+.menu a:hover {
+  color: #b2001b;
+}
+
+.burger {
+  width: 35px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+  border-radius: 2px;
+}
+.burger {
+  display: none;
+}
+
+.mobillogo {
+  display: none;
+}
+
+/* mobilmenu */
+@media screen and (max-width: 800px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .desktopmenu {
+    display: none;
+  }
+
+  .menu,
+  .desktoplogo {
+    display: none;
+  }
+
+  .mobillogo img {
+    width: 48px;
+    height: 44px;
+  }
+
+  .mobillogo {
+    display: block;
+  }
+
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: flex;
+    flex-direction: column; /* Display items vertically */
+    align-items: center; /* Center items horizontally */
+    background-color: #1c1c1c;
+    position: absolute;
+    top: 115px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+}
+
+/*-------------------------- footer ---------------------------------*/
+
+/* desktop footer */
+@media screen and (min-width: 800px) {
+  .footer {
+    background: linear-gradient(to top, #9b9b9b, #1c1c1c);
+    overflow: hidden;
+    height: 300px;
+    margin-top: 150px;
+  }
+
+  .footerheader {
+    font-weight: 600;
+  }
+
+  .webdesign p {
+    font-weight: 600;
+  }
+
+  .webdesign a {
+    font-weight: 300;
+    color: white;
+    cursor: pointer;
+  }
+
+  /* layout */
+
+  .footercontent {
+    margin-left: 58px;
+    margin-right: 58px;
+    padding-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+
+  .socialscontainer {
+    grid-column: 2;
+    grid-row: 1;
+    padding-left: 80px;
+  }
+
+  .kontaktcontainer {
+    grid-column: 1;
+    grid-row: 1;
+    padding-left: 30px;
+  }
+
+  .footerlogo_container {
+    grid-column: 3;
+    grid-row: 1 / span 2; /* span 2 rows */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* center items horizontally */
+    justify-content: center; /* center items vertically */
+  }
+
+  .footerlogotekst {
+    margin-top: 10px; /* adjust margin as needed */
+  }
+
+  .webdesign {
+    grid-column: 2;
+    grid-row: 2;
+    padding-left: 70px;
+    margin-top: -90px;
+  }
+}
+
+/* mobilfooter */
+@media screen and (max-width: 800px) {
+  /* layout */
+
+  .footer {
+    background: linear-gradient(to top, #9b9b9b, #1c1c1c);
+    overflow: visible;
+    height: 600px;
+  }
+
+  .footercontent {
+    margin-left: 58px;
+    margin-right: 58px;
+  }
+
+  .socialscontainer {
+    padding-top: 80px;
+  }
+
+  .kontaktcontainer p {
+    margin-bottom: -13px; /* Adjust the margin as needed */
+  }
+
+  .kontaktcontainer {
+    margin-top: 40px;
+  }
+
+  .footerlogo_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+  }
+
+  .footerlogo {
+    display: flex;
+    justify-content: center;
+    width: 65px;
+  }
+
+  .footerlogotekst {
+    display: none;
+  }
+
+  .webdesign {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: -500px;
+  }
+}
